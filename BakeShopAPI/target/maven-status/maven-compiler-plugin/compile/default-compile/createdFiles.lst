@@ -1,0 +1,4 @@
+khanh\bakeshop\api\Repositories\BakeRepo.class
+khanh\bakeshop\api\Entities\Bake.class
+khanh\bakeshop\api\Controller\BakeShopController.class
+khanh\bakeshop\api\ApiApplication.class
