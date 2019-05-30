@@ -1,0 +1,19 @@
+<div class="col-md-6 bake-container">
+  <h2 class="text-center">Edit Bake</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="hidden">
+      <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+    </div>
+    <div class="form-group">
+      <label for="bakename">Bake Name:</label>
+      <input type="text" formControlName="bakename" placeholder="bakename" name="bakename" class="form-control" id="bakename" readonly="true">
+    </div>
+
+    <div class="form-group">
+      <label for="bakePrice">Bake Price:</label>
+      <input formControlName="bakePrice" placeholder="Bake Name" name="bakePrice" class="form-control" id="bakePrice">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

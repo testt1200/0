@@ -1,0 +1,22 @@
+<div class="col-md-6 bake-container">
+  <h2 style="margin: auto"> Bake Details</h2>
+  <button class="btn btn-danger" style="width:100px" (click)="addBake()"> Add Bake</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Bake Name</th>
+      <th>Bake Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let bake of bakes">
+      <td class="hidden">{{bake.id}}</td>
+      <td>{{bake.bakeName}}</td>
+      <td>{{bake.bakePrice}}</td>
+      <td><button class="btn btn-success" (click)="deleteBake(bake)"> Delete</button>
+      <button class="btn btn-success" (click)="editBake(bake)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
